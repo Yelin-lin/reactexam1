@@ -28,7 +28,7 @@ function App() {
   //추가하기 버튼 handler
   const clickAddButtonHandler = () => {
     const newToDo = {
-      id: toDo.length+1,
+      id: Date.now(),
       title,
       content,
       isDone: false,
