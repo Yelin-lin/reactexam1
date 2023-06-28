@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+html{
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #ddd;
+}
+
+/* 입력창 css */
+
+.inputTodoBox{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100px;
+  padding: 0 20px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 20px;
+
+  font-weight: 700;
+}
+
+.inputTodoBox input{
+  border: none;
+  border-radius: 10px;
+
+  height: 40px;
+  width: 240px;
+}
+
+.inputTodoBox > button{
+  border:none;
+  border-radius: 10px;
+  background-color: palevioletred;
   color: white;
+  width: 140px;
+  height: 40px;
+  margin-left:auto;
+
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+/* todo 내용 css  */
+
+.toDoListBox{
+  padding: 0px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toDoBox{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.toDoBox > div:nth-child(1) {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.toDoItemList{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  width: 100%; 
+}
+
+.toDoItem{
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  border: 4px solid palevioletred;
+  border-radius: 10px;
+}
+
+.toDoContent p:nth-child(1){
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.buttonBox{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buttonBox button{
+  width: 120px;
+  height: 40px;
+
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.buttonBox button:nth-child(1){
+  border-color: red;
+}
+
+.buttonBox button:nth-child(2){
+  border-color: green;
 }
