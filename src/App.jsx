@@ -7,8 +7,8 @@ function App() {
 
   //기본 데이터
   const [toDo, setToDo] = useState([
-    {id:1, title:"타이틀1", content:"내용1", isDone: false},
-    {id:2, title:"타이틀2", content:"내용2", isDone: false},
+    {id:1, title:"리액트", content:"공부하자", isDone: false},
+    {id:2, title:"vercel", content:"해보자", isDone: false},
   ])
 
   //title과 content를 입력받는 걸 render해주기 위함
